@@ -17,7 +17,7 @@ const Header = () => {
         >
           <img className='img' src= {img} alt="" />
           <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-            Developers Kwiz App
+            Developers Kwiz
           </span>
         </Link>
         <ul className='flex items-center hidden space-x-8 lg:flex'>
