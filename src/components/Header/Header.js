@@ -23,12 +23,12 @@ const Header = () => {
         <ul className='flex items-center hidden space-x-8 lg:flex'>
           <li>
             <Link
-              to='/home'
-              aria-label='Home'
-              title='Home'
+              to='/category'
+              aria-label='category'
+              title='category'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
-              Home
+              Category
             </Link>
           </li>
           <li>
