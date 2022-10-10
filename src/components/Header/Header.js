@@ -15,7 +15,7 @@ const Header = () => {
           title='Smart Home'
           className='inline-flex items-center'
         >
-          <img className='img' src= {img} alt="" />
+          <img className='img' src={img} alt="" />
           <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
             Developers Kwiz
           </span>
@@ -33,12 +33,12 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='/shop'
-              aria-label='Shop'
-              title='Shop'
+              to='/statistics'
+              aria-label='statistics'
+              title='statistics'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
-              Shop
+              Statistics
             </Link>
           </li>
           <li>
@@ -50,7 +50,7 @@ const Header = () => {
             >
               <div className='relative py-3'>
                 <p>Cart</p>
-                <p className='absolute bottom-5 left-9'>{}</p>
+                <p className='absolute bottom-5 left-9'>{ }</p>
               </div>
             </Link>
           </li>
@@ -98,16 +98,9 @@ const Header = () => {
                       title='Company'
                       className='inline-flex items-center'
                     >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 32 32'
-                        fill='currentColor'
-                        className='flex-shrink-0 w-8 h-8 rounded-full text-gray-900'
-                      >
-                        <path d='M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z'></path>
-                      </svg>
+                      <img className='img' src={img} alt="" />
                       <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                        Smart Home
+                        Developers Kwiz
                       </span>
                     </Link>
                   </div>
@@ -131,12 +124,25 @@ const Header = () => {
                   <ul className='space-y-4'>
                     <li>
                       <Link
-                        to='/shop'
-                        aria-label='Shop'
-                        title='Shop'
+                        to='/category'
+                        aria-label='category'
+                        title='category'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
-                        Shop
+                        Category
+                      </Link>
+                    </li>
+
+
+
+                    <li>
+                      <Link
+                        to='/statistics'
+                        aria-label='statistics'
+                        title='statistics'
+                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                      >
+                        Statistics
                       </Link>
                     </li>
                     <li>
@@ -149,7 +155,7 @@ const Header = () => {
                         <div className='relative py-3'>
                           <p>Cart</p>
                           <p className='absolute bottom-5 left-9'>
-                            {}
+                            { }
                           </p>
                         </div>
                       </Link>
