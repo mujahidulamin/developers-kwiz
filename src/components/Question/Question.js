@@ -14,7 +14,7 @@ const Question = ({ question }) => {
 
 
     const handleRightAnswer = () => {
-        toast.info(correctAnswer, { autoClose: 500 })
+        toast.info(correctAnswer, { autoClose: 900 })
     }
 
     return (

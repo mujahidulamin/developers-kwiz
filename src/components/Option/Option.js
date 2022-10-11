@@ -9,9 +9,9 @@ const Option = ({ option, question }) => {
         // console.log(correctAnswer);
     const handleAnswerQuestion = () => {
         if(correctAnswer === option){
-            toast.success('Your Answer is Correct', {autoClose: 500})
+            toast.success('Your Answer is Correct', {autoClose: 700})
         }else{
-            toast.error('Your Answer is Incorrect', {autoClose: 500})
+            toast.error('Your Answer is Incorrect', {autoClose: 700})
         }
     }
 
