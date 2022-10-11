@@ -18,7 +18,7 @@ const Question = ({ question }) => {
     }
 
     return (
-        <div className='bg-cyan-200 p-5 w-10/12 m-auto my-4 rounded-3xl'>
+        <div className='bg-cyan-200 p-5 w-10/12 m-auto my-12 rounded-3xl'>
             <ToastContainer position='top-center'></ToastContainer>
 
             <p className='text-center text-2xl font-bold'>

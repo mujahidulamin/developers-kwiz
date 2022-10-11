@@ -6,17 +6,17 @@ export const Footer = () => {
     <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-        <Link
-          to='/'
-          aria-label='Smart Home'
-          title='Smart Home'
-          className='inline-flex items-center'
-        >
-          <img className='img' src= {img} alt="" />
-          <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-            Developers Kwiz
-          </span>
-        </Link>
+          <Link
+            to='/'
+            aria-label='Smart Home'
+            title='Smart Home'
+            className='inline-flex items-center'
+          >
+            <img className='img' src={img} alt="" />
+            <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+              Developers Kwiz
+            </span>
+          </Link>
         </div>
         <div className="space-y-2 text-sm">
           <p className="text-base font-bold tracking-wide text-gray-900">
@@ -73,7 +73,7 @@ export const Footer = () => {
               </svg>
             </a>
             <a
-              href="/"
+              href='/'
               className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
