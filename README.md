@@ -1,6 +1,6 @@
 # Project Name is: Developers Kwiz
 
-Live Site Link of this project [Create React App](https://developers-kwiz.netlify.app/).
+## Live Site Link of this project [Developers Kwiz](https://developers-kwiz.netlify.app/).
 
 ## Followings are done in this project:
 
