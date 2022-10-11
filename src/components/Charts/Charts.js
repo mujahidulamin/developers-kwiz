@@ -14,7 +14,7 @@ const Charts = () => {
 
     return (
         <div>
-            <h2 className='text-4xl font-bold text-center mt-4'>Line Chart With Name, Id and Total</h2>
+            <h2 className='text-5xl text-center mt-12'>Line Chart With Name, Id and Total</h2>
             <div className='grid md:grid-cols-2 mt-28'>
             {
                 course.map(courseData => <Chart
