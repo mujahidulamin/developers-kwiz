@@ -6,24 +6,25 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ question }) => {
     console.log(question);
-    const {correctAnswer} = question
+    const { correctAnswer } = question
+
     const handleRightAnswer = () => {
-        toast.info(correctAnswer, {autoClose: 500})
+        toast.info(correctAnswer, { autoClose: 500 })
     }
 
     return (
-        <div className='bg-cyan-200 p-5 w-9/12 m-auto my-4 rounded-3xl'>
+        <div className='bg-cyan-200 p-5 w-10/12 m-auto my-4 rounded-3xl'>
             <ToastContainer position='top-center'></ToastContainer>
-            <div className='flex justify-center'>
-                <p className='text-center'>{question.question}
-                </p>
-               <button onClick={handleRightAnswer}><i className="fa-solid fa-eye ml-16"></i></button>
-            </div>
+            <p className='text-center text-2xl font-bold'>{question.question}
+            </p>
+            <span className='flex justify-end'>
+                <button onClick={handleRightAnswer}><i className="fa-solid fa-eye"></i></button>
+            </span>
 
             <div className=' text-center my-8 gap-5 grid grid-cols-2'>
                 {
                     question.options.map(option => <Option
-                        
+
                         option={option}
                         question={question}
                     ></Option>)

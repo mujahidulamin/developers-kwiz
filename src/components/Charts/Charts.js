@@ -1,11 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import Chart from '../Chart/Chart';
 
-
-
-
-
-
 const Charts = () => {
     const courses = useLoaderData()
     console.log(courses);

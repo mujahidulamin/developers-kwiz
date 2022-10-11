@@ -22,8 +22,6 @@ const Quiz = ({ quiz }) => {
                     Start Quiz
                 </button>
             </Link>
-
-
         </div>
     );
 };
