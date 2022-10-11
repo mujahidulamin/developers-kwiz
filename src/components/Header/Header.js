@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import img from '../../favicon.png'
 import './Header.css'
 
@@ -21,48 +21,37 @@ const Header = () => {
           </span>
         </Link>
         <ul className='flex items-center hidden space-x-8 lg:flex'>
-          <li>
-            <Link
+          <li className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 '>
+            <NavLink 
               to='/category'
               aria-label='category'
               title='category'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className={({ isActive }) =>
+              isActive ? 'active' : undefined
+            }
             >
               Category
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to='/statistics'
               aria-label='statistics'
               title='statistics'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Statistics
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to='/cart'
-              aria-label='Cart'
-              title='Cart'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-            >
-              <div className='relative py-3'>
-                <p>Cart</p>
-                <p className='absolute bottom-5 left-9'>{ }</p>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/about'
+            <NavLink
+              to='/blog'
               aria-label='About Us'
               title='About Us'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
-              About Us
-            </Link>
+              Blog
+            </NavLink>
           </li>
         </ul>
         <div className='lg:hidden'>
@@ -123,52 +112,37 @@ const Header = () => {
                 <nav>
                   <ul className='space-y-4'>
                     <li>
-                      <Link
+                      <NavLink
                         to='/category'
                         aria-label='category'
                         title='category'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Category
-                      </Link>
+                      </NavLink>
                     </li>
 
 
 
                     <li>
-                      <Link
+                      <NavLink
                         to='/statistics'
                         aria-label='statistics'
                         title='statistics'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Statistics
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
-                        to='/cart'
-                        aria-label='Cart'
-                        title='Cart'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                      >
-                        <div className='relative py-3'>
-                          <p>Cart</p>
-                          <p className='absolute bottom-5 left-9'>
-                            { }
-                          </p>
-                        </div>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to='/about'
+                      <NavLink
+                        to='/blog'
                         aria-label='About Us'
                         title='About Us'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
-                        About Us
-                      </Link>
+                        Blog
+                      </NavLink>
                     </li>
                   </ul>
                 </nav>

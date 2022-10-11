@@ -3,8 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 const QuizDetails = () => {
-    const quiz = useLoaderData()
-    console.log(quiz);
+    let quiz = useLoaderData()
     
     return (
         <div>

@@ -5,13 +5,14 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ({ question }) => {
+    console.log(question);
+    
     const { correctAnswer } = question
-
-    let splitQuestion ;
+    let splitQuestion;
     splitQuestion = question.question.split('<p>')
     let againSplitQuestion = splitQuestion[1].split('</p>')
-    // let againSplitQuestion = splitQuestion.question.split('</p>')
-    console.log(splitQuestion);
+
+
     const handleRightAnswer = () => {
         toast.info(correctAnswer, { autoClose: 500 })
     }
@@ -19,8 +20,11 @@ const Question = ({ question }) => {
     return (
         <div className='bg-cyan-200 p-5 w-10/12 m-auto my-4 rounded-3xl'>
             <ToastContainer position='top-center'></ToastContainer>
-            <p className='text-center text-2xl font-bold'>{againSplitQuestion[0]}
+
+            <p className='text-center text-2xl font-bold'>
+                 {againSplitQuestion[0]}
             </p>
+
             <span className='flex justify-end'>
                 <button onClick={handleRightAnswer}><i className="fa-solid fa-eye"></i></button>
             </span>

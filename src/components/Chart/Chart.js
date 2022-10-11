@@ -7,7 +7,7 @@ const Chart = ({ courseData }) => {
     console.log(total, name);
     const data = [
         {
-            total: total,
+            question: total,
             name: name,
             id: id,
         },
@@ -17,9 +17,9 @@ const Chart = ({ courseData }) => {
     return (
         <div className='ml-4'>
             <LineChart width={350} height={300} data={data}>
-                <Line type="monotone" dataKey="id" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="question" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
-                <YAxis dataKey="total" />
+                <YAxis dataKey="question" />
                 <Tooltip />
             </LineChart>
         </div>
